@@ -1,0 +1,27 @@
+.heading h1 span {
+  color: aquamarine;
+  font-size: 1.3em;
+}
+
+.heading h1 {
+  color: white;
+  text-align: center;
+}
+.box img {
+  width: 40px;
+  position: absolute;
+  height: 40px;
+  top: 19px;
+  left: 22px;
+}
+.row .box {
+  height: 50px;
+  width: 50px;
+  padding: 40px;
+  position: relative;
+
+  background-color: black;
+}
+.box:hover {
+  cursor: pointer;
+}

@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Oswald:wght@500&family=Poppins:wght@500&family=Roboto&display=swap");
 .App {
   text-align: center;
+}
+.mainapp {
+  background-color: rgb(11, 20, 74);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
