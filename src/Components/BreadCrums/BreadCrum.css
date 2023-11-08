@@ -1,0 +1,10 @@
+.breadcrum img {
+  width: 7px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.breadcrum {
+  font-size: 15px;
+  width: 80%;
+  margin: 6px auto;
+}

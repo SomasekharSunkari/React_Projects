@@ -1,0 +1,51 @@
+.newsletter {
+  margin-top: 80px;
+  height: 300px;
+  width: 90%;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgb(223, 73, 191), white);
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.letter-content h1 {
+  word-spacing: 5px;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+.letter-content p {
+  margin: 15px;
+}
+.letter-content .customer-email {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.letter-content .customer-email input:focus {
+  border: 0.1px solid gray;
+  outline: 0;
+  padding-left: 40px;
+}
+.letter-content .customer-email input {
+  width: 45%;
+  height: 56px;
+  outline: 0;
+  border-radius: 30px;
+  border: 0.1px solid gray;
+  padding-left: 40px;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+.letter-content .customer-email button {
+  width: 13%;
+  border-radius: 30px;
+  /* position: absolute; */
+  transform: translateX(-100px);
+  height: 56px;
+  cursor: pointer;
+
+  background-color: black;
+  color: white;
+}

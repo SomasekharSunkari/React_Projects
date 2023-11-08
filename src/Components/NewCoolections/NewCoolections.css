@@ -1,0 +1,23 @@
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.newcollections {
+  margin-top: 70px;
+}
+.newcollections .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.newcollections hr {
+  width: 200px;
+  height: 6px;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+.navbar .logopart {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-cart-count {
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+  padding: 10px;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  font-size: 10px;
+  background-color: red;
+}
+.nav-cart-count p {
+  position: absolute;
+  top: 20%;
+  color: white;
+  left: 40%;
+}
+.navbar .login-button {
+  flex: 1;
+  align-items: center;
+  background-color: transparent;
+  gap: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar .login-button span {
+  position: relative;
+}
+.navbar .login-button span img {
+  height: 20%;
+  cursor: pointer;
+}
+
+.navbar .login-button .login-button-main {
+  width: 100px;
+
+  background-color: transparent;
+
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 20px;
+  color: black;
+  border: 1px solid black;
+}
+.navbar .login-button .login-button-main:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-links nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+}
+.nav-links nav ul li hr {
+  background-color: red;
+  width: 100%;
+  border-radius: 10px;
+  height: 3px;
+  margin-top: 3px;
+}
+
+.navbar .nav-links {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
