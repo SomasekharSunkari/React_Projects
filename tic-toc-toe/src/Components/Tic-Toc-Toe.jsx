@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./Tic-Toc-Toe.css";
 import cross_icon from "../Assets/cross_icon-removebg-preview.png";
 import circle_img from "../Assets/Circle_img-removebg-preview.png";
+let data = ["", "", "", "", "", "", "", "", ""];
 
 export const TicTocToe = () => {
   const [lock, setlock] = useState(false);
@@ -17,6 +18,7 @@ export const TicTocToe = () => {
   const titleRef = useRef(0);
   const [count, setCount] = useState(0);
   const checkwin = () => {
+    console.log(data);
     if (data[0] === data[1] && data[1] === data[2] && data[2] != "") {
       won(data[0]);
     } else if (data[2] === data[5] && data[5] && data[8] && data[8] != "") {
@@ -56,11 +58,12 @@ export const TicTocToe = () => {
     if (count % 2 === 0) {
       data[num] = "X";
       e.target.innerHTML = `<img src='${cross_icon}'>`;
-
+      console.log(data);
       setCount((count) => count + 1);
     } else {
       data[num] = "O";
       e.target.innerHTML = `<img src='${circle_img}'>`;
+      console.log(data);
 
       setCount((count) => count + 1);
     }
@@ -69,10 +72,12 @@ export const TicTocToe = () => {
   const reset = () => {
     setlock(false);
     data = ["", "", "", "", "", "", "", "", ""];
+    console.log(data);
+    titleRef.current.innerHTML = `Tic-Toc-Toe Game in <span>React</span> `;
+
     refer.map((e) => (e.current.innerHTML = ""));
   };
 
-  let data = ["", "", "", "", "", "", "", "", ""];
   const refer = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
   return (
     <div className="game-app overflow-x-hidden d-flex flex-column justify-content-center vh-100 align-items-center">
