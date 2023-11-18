@@ -2,11 +2,25 @@ import "./Styles/Header.css";
 import "./Styles/strap.css";
 import cartimage from "../Components/Assets/cart-removebg-preview.png";
 import { Link } from "react-router-dom";
-import { Context, useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { Context } from "./Context";
 export const HeaderPart = () => {
   const cartref = useRef(null);
+  const { cartItem, setCartItem } = useContext(Context);
+  useEffect(() => {
+    if (cartref.current) {
+      if (cartItem === 0) {
+        cartref.current.classList.remove("d-inline-block");
+        cartref.current.style.display = "none";
+      } else {
+        cartref.current.classList.add("d-inline-block");
+        cartref.current.innerHTML = cartItem;
+        cartref.current.style.display = "block";
+      }
+    }
+  }, [cartItem]);
 
-  cartref.current.innerHTML = "0"; // const { cartItem, setCartItem } = useContext(Context);
+  // const { cartItem, setCartItem } = useContext(Context);
   // console.log("Cart Item are  -->  " + cartItem);
   return (
     <div className="headerpart m-0 p-0 ">
@@ -16,16 +30,26 @@ export const HeaderPart = () => {
         <div className="login-cart pe-5  pt-1 ">
           <button className="btn btn-outline-dark me-3 ">Login</button>
 
-          <img src={cartimage} alt="cart-image-icon" className="cart-icon " />
           <span
-            className="rounded-circle d-inline-block p-2"
             ref={cartref}
+            className="d-inline-block rounded-circle"
             style={{
-              height: "7px",
-              width: "5px",
+              height: "15px",
+              width: "15px",
               backgroundColor: "red",
+              overflow: "hidden",
+              fontSize: "10px",
+              textAlign: "center",
+              position: "relative",
+              color: "white",
+              top: "-10px",
+              right: "-35px",
+              zIndex: "100",
             }}
           ></span>
+          <Link to="/cart">
+            <img src={cartimage} className="cart-icon " />
+          </Link>
         </div>
       </div>
     </div>

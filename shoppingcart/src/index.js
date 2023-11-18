@@ -8,9 +8,7 @@ import { ContextPage } from "./Components/Context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ContextPage>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </ContextPage>
 );
 

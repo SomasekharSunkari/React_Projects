@@ -4,6 +4,7 @@ import "../../tic-toc-toe/node_modules/bootstrap/dist/css/bootstrap.css";
 import { HeaderPart } from "./Components/Header";
 import React from "react";
 import { Homepage } from "./Components/Pages/Homepage";
+import { Cart } from "./Components/Pages/Cart";
 import { Sidebar } from "./Components/Sidebar";
 import { ProductsDisplay } from "./Components/Pages/ProductsDisplay";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -24,6 +25,7 @@ function App() {
               path="/vegetables"
               element={<ProductsDisplay name="Vegetables" />}
             />
+            <Route path="/cart" element={<Cart />} />
             <Route
               path="/fruites"
               element={<ProductsDisplay name="Fruites" />}
