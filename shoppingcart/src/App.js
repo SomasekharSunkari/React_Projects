@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "../../tic-toc-toe/node_modules/bootstrap/dist/css/bootstrap.css";
-import { HeaderPart } from "./Components/Header";
+import { HeaderPart } from "./Components/Header/Header";
 import React from "react";
 import { Homepage } from "./Components/Pages/Homepage";
 import { Cart } from "./Components/Pages/Cart";
@@ -14,9 +14,8 @@ import { NotFound } from "./NotFOund";
 function App() {
   return (
     <React.Fragment>
-      <HeaderPart />
-
       <BrowserRouter>
+        <HeaderPart />
         <div className="d-flex flex-row">
           <Sidebar />
           <Routes>

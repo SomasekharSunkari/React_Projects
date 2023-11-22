@@ -17,7 +17,7 @@ export const Item = (props) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
           officia.
         </p>
-        <h3>Cost :{props.cost}</h3>
+        <h3>Cost :${props.cost}</h3>
         <a
           href="#"
           className="btn btn-outline-primary d-block mb-2"
@@ -31,6 +31,7 @@ export const Item = (props) => {
             } else {
               setCartData([...cartData, { productId: id, quantity: 1 }]);
             }
+            console.log(cartData);
           }}
           data-product-id={props.id}
         >

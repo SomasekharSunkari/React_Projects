@@ -1,21 +1,32 @@
 import { useEffect, useContext } from "react";
+import "../Styles/CartItem.css";
 
 export const CartItem = (props) => {
   return (
-    <div className="cartitem row">
-      <div className="heading row cart-item">
-        <p className="sl_no">{props.slno}</p>
-        <p className="prouctname">{props.name}</p>
-        <img src={props.image} />
-        <p className="price">{props.price}</p>
-        <p className="quantity">{props.quanitiy}</p>
+    <div className="cartitem  text-center   m-0 p-0 ">
+      <div className="heading row row-cols-6 cart-item justify-content-center align-items-center ">
+        <p className="sl_no fw-bold  ">{props.slno}</p>
+        <p className="prouctname fw-bold ">{props.name}</p>
+        <img src={props.image} className="img-cart  " />
+        <p
+          className="price 
+           fw-bold"
+        >
+          ${Number(props.price) * Number(props.quantity)}
+        </p>
+        <p
+          className="quantity 
+          fw-bold "
+        >
+          {props.quantity}
+        </p>
+        <button
+          type="button"
+          className="btn-close  "
+          data-bs-dismiss="cart-item"
+          aria-label="Close"
+        ></button>
       </div>
-      <button
-        type="button"
-        className="btn-close"
-        data-bs-dismiss="cart-item"
-        aria-label="Close"
-      ></button>
     </div>
   );
 };

@@ -1,9 +1,8 @@
-import "./Styles/Header.css";
-import "./Styles/strap.css";
-import cartimage from "../Components/Assets/cart-removebg-preview.png";
+import "./Header.css";
+import cartimage from "../Assets/cart-removebg-preview.png";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useRef } from "react";
-import { Context } from "./Context";
+import { Context } from "../Context";
 export const HeaderPart = () => {
   const cartref = useRef(null);
   const { cartItem, setCartItem } = useContext(Context);
@@ -19,9 +18,6 @@ export const HeaderPart = () => {
       }
     }
   }, [cartItem]);
-
-  // const { cartItem, setCartItem } = useContext(Context);
-  // console.log("Cart Item are  -->  " + cartItem);
   return (
     <div className="headerpart m-0 p-0 ">
       <div className=" header-part bg-info d-flex justify-content-between">
@@ -47,8 +43,8 @@ export const HeaderPart = () => {
               zIndex: "100",
             }}
           ></span>
-          <Link to="/cart">
-            <img src={cartimage} className="cart-icon " />
+          <Link to="/cart" className="cart-route">
+            <img src={cartimage} className="cart-icon" />
           </Link>
         </div>
       </div>

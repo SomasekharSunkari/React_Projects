@@ -1,6 +1,7 @@
 import "./Styles/Sidebar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Cart } from "./Pages/Cart";
 export const Sidebar = () => {
   const [menuItem, setMenuItem] = useState("");
   return (
@@ -13,6 +14,7 @@ export const Sidebar = () => {
         >
           Vegetables
         </Link>
+
         <Link
           to="/fruites"
           className="border border-dark border-1 

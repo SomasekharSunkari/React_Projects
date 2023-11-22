@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.header-part {
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.carticonlink {
+  transform: scale(1);
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+.cart-route {
+  display: inline;
+  padding: 0;
+  background-color: none;
+}
+.cart-route:hover {
+  background-color: transparent;
+}
+.cart-icon:hover {
+  transform: scale(1.3);
+}
+.cart-icon {
+  transform: scale(1.2);
+  transition: transform 0.5s linear;
+  animation: slide-in-out 0.2s ease-in-out 10;
+  cursor: pointer;
+}
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
