@@ -83,7 +83,7 @@ export const NavBar = () => {
         </Link>
         <span>
           <Link to="/cart">
-            <img src={carticon} alt="Cart Icon " />
+            <img src={carticon} alt="Cart Icon " className="sekhar" />
           </Link>
           <div className="nav-cart-count">
             <p>{getTotalCartItems()}</p>
