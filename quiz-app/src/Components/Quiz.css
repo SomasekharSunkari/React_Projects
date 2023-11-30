@@ -1,0 +1,107 @@
+.container {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container hr {
+  width: 95%;
+  height: 3px;
+  background-color: black;
+}
+.container .question {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: center;
+}
+ul {
+  padding: 0;
+}
+.container p {
+  padding-left: 40px;
+}
+.container .reset:hover {
+  cursor: pointer;
+}
+.correct {
+  background-color: rgba(71, 219, 88, 0.3);
+  border: 1px rgba(71, 219, 88, 0.3) solid;
+}
+.roung {
+  background-color: rgba(216, 95, 95, 0.3);
+  border: 1px rgba(216, 95, 95, 0.3) solid;
+}
+.container .next {
+  width: 120px;
+  height: 30px;
+  background-color: rgb(36, 175, 222);
+  cursor: pointer;
+  margin-bottom: 3px;
+  border: 0;
+  color: white;
+  margin-left: 30px;
+}
+.container .reset {
+  width: 140px;
+  height: 35px;
+  border: 0;
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #db0cdb;
+}
+.container .heading {
+  font-size: 25px;
+  padding: 0;
+  padding-left: 20px;
+}
+.container ul li:nth-child(1) {
+  list-style-type: none;
+  width: 70%;
+  height: 35px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.container ul li:nth-child(2) {
+  list-style-type: none;
+  width: 70%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.container ul li:nth-child(3) {
+  list-style-type: none;
+  width: 70%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.container ul li:nth-child(4) {
+  list-style-type: none;
+  width: 70%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  padding-left: 20px;
+}

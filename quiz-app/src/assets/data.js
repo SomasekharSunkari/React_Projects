@@ -1,0 +1,42 @@
+export const data = [
+  {
+    question: "What is the first Number ? ",
+    option1: "1",
+    option2: "2",
+    option3: "3",
+    option4: "4",
+    ans: 1,
+  },
+  {
+    question: "What is the second Number ? ",
+    option1: "2",
+    option2: "4",
+    option3: "1",
+    option4: "3",
+    ans: 1,
+  },
+  {
+    question: "What is the Third Number ? ",
+    option1: "2",
+    option2: "3",
+    option3: "1",
+    option4: "4",
+    ans: 2,
+  },
+  {
+    question: "What is the Fourth Number ? ",
+    option1: "2",
+    option2: "1",
+    option3: "4",
+    option4: "3",
+    ans: 3,
+  },
+  {
+    question: "What is the first Number ? ",
+    option1: "1",
+    option2: "2",
+    option3: "3",
+    option4: "4",
+    ans: 1,
+  },
+];
